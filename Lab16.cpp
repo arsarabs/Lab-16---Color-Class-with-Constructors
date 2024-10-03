@@ -38,31 +38,38 @@ public:
 	void print() const; // print() method
 };
 
-//STEP #1b: Function Headers
+//STEP #2: Function Headers
 //Color() - Default constructor that intializes red, green, blue to zero - has no arguments and doesn't return anything
 Color::Color() : red(0), green(0), blue(0){}
 
 //Color(int r, int g, int b) - Parameter constructor that intializes red, green, blue to given values - 
 //arguments are r(int), g(int), b(int) - doesn't return anything
-Color::Color() : red(0), green(0), blue(0) {}
-
-//Color() - Default constructor that intializes red, green, blue to zero - has no arguments and doesn't return anything
-Color::Color() : red(0), green(0), blue(0) {}
-
-
-
-
-// STEP #2:	Now, let's define some functions. The constructor, color(), which initializes our values and returns nothing
 Color::Color(int r, int g, int b) : red(r), green(g), blue(b) {}
 
+//Color(int r) - Partial constructor that intializes red to r, green & blue to zero -
+//argument is only r(int) & doesn't return anything
+Color::Color(int r) : red(r), green(0), blue(0) {}
+
+
+
 //SETTERS
-void Color::setRed(int r) { red = r; }
+//setRed(int r ) - Sets the red component, argument is (int r), doesn't return anything
+void Color::setRed(int r) { red = r; } 
+
+//setGreen(int g ) - Sets the green component, argument is (int g), doesn't return anything
 void Color::setGreen(int g) { green = g; }
+
+//setBlue(int b) - Sets the blue component, argument is (int b), doesn't return anything
 void Color::setBlue(int b) { blue = b; }
 
 //GETTERS
+//getRed(int r ) - Returns the red component, no arguments, returns red (int)
 int Color::getRed()const { return red; }
+
+//getGreen(int g ) - Returns the green component, no arguments, returns green (int)
 int Color::getGreen()const { return green; }
+
+//getBlue(int b) - Returns the blue component, no arguments, returns blue (int)
 int Color::getBlue()const { return blue; }
 
 //PRINT() - simply prints teh color object in a nice format, and doesn't return anything
