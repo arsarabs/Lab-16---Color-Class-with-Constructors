@@ -1,4 +1,4 @@
-//COMSC-210 | Lab 6: Color Class w/Constructors | Anthony R. Sarabia
+//COMSC-210 | Lab 16: Color Class w/Constructors | Anthony R. Sarabia
 // IDE used: Visual Studio
 
 #include <iostream>
@@ -21,9 +21,11 @@ private:
 	int blue;
 
 public:
-	//Now, let's do those normal setters & getters, as well as the member print() method
+	//UPDATED CONSTRUCTORS
 
-	Color(int r = 0, int g = 0, int b = 0);  //Construtor
+	Color();			//Default constructor
+	Color(int r, int g, int b); //Parameter constructor
+	Color(int r);		//Partial constructor
 
 	void setRed(int r); //SETTERS
 	void setGreen(int g);
@@ -35,6 +37,20 @@ public:
 
 	void print() const; // print() method
 };
+
+//STEP #1b: Function Headers
+//Color() - Default constructor that intializes red, green, blue to zero - has no arguments and doesn't return anything
+Color::Color() : red(0), green(0), blue(0){}
+
+//Color(int r, int g, int b) - Parameter constructor that intializes red, green, blue to given values - 
+//arguments are r(int), g(int), b(int) - doesn't return anything
+Color::Color() : red(0), green(0), blue(0) {}
+
+//Color() - Default constructor that intializes red, green, blue to zero - has no arguments and doesn't return anything
+Color::Color() : red(0), green(0), blue(0) {}
+
+
+
 
 // STEP #2:	Now, let's define some functions. The constructor, color(), which initializes our values and returns nothing
 Color::Color(int r, int g, int b) : red(r), green(g), blue(b) {}
