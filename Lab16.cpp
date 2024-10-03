@@ -76,7 +76,7 @@ int Color::getBlue()const { return blue; }
 void Color::print() const {
 	cout << "Color: (RED, GREEN, BLUE) -> (" << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << "" << ")" << endl;
 }
-
+  
 //STEP #4: main() 
 int main() {
 	testingColor(); // call function in main
