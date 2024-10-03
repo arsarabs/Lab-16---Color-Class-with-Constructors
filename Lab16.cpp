@@ -72,13 +72,12 @@ int Color::getGreen()const { return green; }
 //getBlue(int b) - Returns the blue component, no arguments, returns blue (int)
 int Color::getBlue()const { return blue; }
 
-//PRINT() - simply prints teh color object in a nice format, and doesn't return anything
-
+//PRINT() const - prints the color in formatted way, no arguments, no return 
 void Color::print() const {
 	cout << "Color: (RED, GREEN, BLUE) -> (" << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << "" << ")" << endl;
 }
 
-//STEP #4: main()
+//STEP #4: main() 
 int main() {
 	testingColor(); // call function in main
 	return 0;
