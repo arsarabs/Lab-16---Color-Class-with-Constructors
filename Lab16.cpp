@@ -86,27 +86,27 @@ int main() {
 //STEP #3b: Function Definition for testingColor() - the purpose of this function is to create/test many Color objects
 void testingColor() {
 
-	//Let's create a few Color objects
-	Color firstColor;
-	Color secondColor(1, 0, 0);
-	Color thirdColor(0, 2, 0);
-	Color fourthColor(0, 0, 3);
-	Color fifthColor(7, 1, 4);
+	//Let's create a few Color objects (now using different constructors
+	Color defaultColor;  //Default Constructor 
+	Color parameterColor(1, 2, 3); //Uses parameter constructor
+	Color partialColor(714); // Uses partial construcotr
+	Color oneMorePartial(417); //Another insntace using partial constructor
+	
 
-	//And we'll choose the first color to populate using setters
-	firstColor.setRed(9);
-	firstColor.setGreen(8);
-	firstColor.setBlue(6);
+	//Using setters to modify default
+	defaultColor.setRed(9);
+	defaultColor.setGreen(8);
+	defaultColor.setBlue(6);
 
 	//Now, let's test
 	cout << "TESTING COLOR CLASS" << endl;
 	cout << endl;
 
-	firstColor.print();
-	secondColor.print();
-	thirdColor.print();
-	fourthColor.print();
-	fifthColor.print();
+	defaultColor.print();
+	parameterColor.print();
+	partialColor.print();
+	oneMorePartial.print();
+	
 
 	cout << endl;
 	cout << "COLOR CLASS TESTED" << endl;
