@@ -1,4 +1,5 @@
-//COMSC-210 | Lab 14: Color Class | Anthony R. Sarabia
+//COMSC-210 | Lab 6: Color Class w/Constructors | Anthony R. Sarabia
+// IDE used: Visual Studio
 
 #include <iostream>
 #include <iomanip>
